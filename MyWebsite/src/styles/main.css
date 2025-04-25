@@ -1,0 +1,9 @@
+:root{
+    color-scheme: light dark;
+
+    --text: light-dark(#0A100D, #DEEFF8);
+    --background: light-dark(#DEEFF8, #0A100D);
+    --accent-primary: light-dark(#00A6A6, #002929);
+    --accent-secondary: light-dark(#002929, #00A6A6);
+    --highlight: #D11080;
+}
