@@ -5,12 +5,12 @@ import MainPage from "./MainPage";
 const routes = [
     {
         path: "/",
-        element: <Layout />,
-        errorElement: <ErrorPage />,
+        element: <Layout/>,
+        errorElement: <ErrorPage/>,
         children: [
             {
                 index: true,
-                element: <MainPage />
+                element: <MainPage/>
             }
         ]
     }
