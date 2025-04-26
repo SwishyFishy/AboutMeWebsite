@@ -1,3 +1,5 @@
+import '../styles/NavButton.css';
+
 type props_NavButton = {
     value: string;
     onClick: Function;
