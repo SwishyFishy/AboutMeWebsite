@@ -17,13 +17,3 @@
     font-family: Tahoma, Arial, Helvetica, sans-serif;
     font-size: medium;
 }
-
-/* Buttons */
-input[type="button"]{
-    background-color: var(--accent-primary);
-    color: var(--text);
-
-    font-size: large;
-
-    border: .2em solid var(--accent-secondary);
-}

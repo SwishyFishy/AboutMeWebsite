@@ -1,4 +1,4 @@
-import NavButton from "../NavButton";
+import { NavLink } from "react-router";
 
 import '../../styles/Header.css';
 
@@ -6,13 +6,16 @@ function Header()
 {
     return(
         <div id="header">
-            <nav>
-                <NavButton value="About Me" onClick={function(){}}/>
-                <NavButton value="My CV" onClick={function(){}}/>
-                <NavButton value="Contact Me" onClick={function(){}}/>
-                <NavButton value="Small Projects" onClick={function(){}}/>
-                <NavButton value="Large Projects" onClick={function(){}}/>
-            </nav>
+            <header>
+                <h1>Jonah Galloway-Fenwick</h1>
+                <nav>
+                    <NavLink className="nav" to="/">About Me</NavLink>
+                    <NavLink className="nav" to="/cv">My CV</NavLink>
+                    <NavLink className="nav" to="/contact">Contact Me</NavLink>
+                    <NavLink className="nav" to="/smallprojects">Small Projects</NavLink>
+                    <NavLink className="nav" to="/largeprojects">Large Projects</NavLink>
+                </nav>
+            </header>
         </div>
     );
 }
