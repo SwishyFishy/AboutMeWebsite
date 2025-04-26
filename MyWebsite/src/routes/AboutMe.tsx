@@ -1,6 +1,12 @@
+import TabbedFolder from "../components/page/TabbedFolder";
+
 function AboutMe()
 {
-    return(<p>Hello World</p>);
+    return(
+        <TabbedFolder>
+            <p>Hello World</p>
+        </TabbedFolder>
+    );
 }
 
 export default AboutMe;
