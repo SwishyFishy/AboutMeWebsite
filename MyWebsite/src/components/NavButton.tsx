@@ -1,14 +1,22 @@
+import { NavLink } from 'react-router';
+
 import '../styles/NavButton.css';
 
 type props_NavButton = {
-    value: string;
-    onClick: Function;
+    url: string;
+    title: string;
 }
 
 function NavButton(props: props_NavButton)
 {
     return(
-        <input type="button" name="nav_button" id="nav_button" value={props.value} onClick={() => {props.onClick();}}></input>
+        <NavLink 
+        className={({ isActive}: {isActive: boolean}) => 
+            isActive ? "active" : ""
+        } 
+        to={props.url}>
+            {props.title}
+        </NavLink>
     );
 }
 

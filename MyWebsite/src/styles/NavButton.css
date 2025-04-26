@@ -1,0 +1,14 @@
+a{  
+    background-color: var(--accent-primary);
+    color: var(--text);
+
+    font-size: large;
+    text-decoration: none;
+
+    padding: .1em;
+    border: .2em solid var(--accent-secondary);
+}
+
+a.active{
+    background-color: var(--highlight);
+}

@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import NavButton from '../NavButton';
 
 import '../../styles/Header.css';
 
@@ -9,11 +9,11 @@ function Header()
             <header>
                 <h1>Jonah Galloway-Fenwick</h1>
                 <nav>
-                    <NavLink className="nav" to="/">About Me</NavLink>
-                    <NavLink className="nav" to="/cv">My CV</NavLink>
-                    <NavLink className="nav" to="/contact">Contact Me</NavLink>
-                    <NavLink className="nav" to="/smallprojects">Small Projects</NavLink>
-                    <NavLink className="nav" to="/largeprojects">Large Projects</NavLink>
+                    <NavButton url="/" title="About Me"/>
+                    <NavButton url="/cv" title="My Cv"/>
+                    <NavButton url="/contact" title="Contact Me"/>
+                    <NavButton url="/smallprojects" title="Small Projects"/>
+                    <NavButton url="/largeprojects" title="Large Projects"/>
                 </nav>
             </header>
         </div>
