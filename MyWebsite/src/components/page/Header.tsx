@@ -7,6 +7,7 @@ function Header()
             <nav>
                 <NavButton value="About Me" onClick={function(){}}/>
                 <NavButton value="My CV" onClick={function(){}}/>
+                <NavButton value="Contact Me" onClick={function(){}}/>
                 <NavButton value="Small Projects" onClick={function(){}}/>
                 <NavButton value="Large Projects" onClick={function(){}}/>
             </nav>
