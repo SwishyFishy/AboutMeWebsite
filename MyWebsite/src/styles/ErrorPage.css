@@ -1,0 +1,9 @@
+@import './Layout.css';
+
+#layout p{
+    font-size: large;
+    text-align: center;
+
+    padding-top: 25vh;
+    padding-bottom: 50vh;
+}
