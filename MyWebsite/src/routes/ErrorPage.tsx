@@ -8,7 +8,7 @@ function ErrorPage()
     return(
         <div id="layout">
             <Header/>
-            <p>Error 404 - Page Not Found</p>
+            <p className="error">Error 404 - Page Not Found</p>
             <Footer/>
         </div>
     );

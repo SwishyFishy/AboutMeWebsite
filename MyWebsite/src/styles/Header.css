@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
 
-    padding-bottom: 1em;
+    padding: .5em 0em 1em 1em;
     border-bottom: 1em solid var(--accent-primary);
 }
 

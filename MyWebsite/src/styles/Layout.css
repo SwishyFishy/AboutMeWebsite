@@ -1,3 +1,5 @@
 #layout{
-    margin: 2em 0.5em 2em 0.5em;
+    border-left: 1em solid var(--accent-primary);
+    border-bottom: 1em solid var(--accent-primary);
+    margin: 2em 0em 0em 0em;
 }
