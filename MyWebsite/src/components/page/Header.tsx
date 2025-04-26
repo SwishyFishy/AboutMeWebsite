@@ -1,5 +1,7 @@
 import NavButton from "../NavButton";
 
+import '../../styles/Header.css';
+
 function Header()
 {
     return(

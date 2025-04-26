@@ -1,6 +1,6 @@
 import Layout from "./Layout";
 import ErrorPage from "./ErrorPage";
-import MainPage from "./MainPage";
+import AboutMe from "./AboutMe";
 
 const routes = [
     {
@@ -10,7 +10,7 @@ const routes = [
         children: [
             {
                 index: true,
-                element: <MainPage/>
+                element: <AboutMe/>
             }
         ]
     }

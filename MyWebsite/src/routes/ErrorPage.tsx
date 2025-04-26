@@ -1,3 +1,5 @@
+import '../styles/ErrorPage.css';
+
 function ErrorPage()
 {
     return(<p>Error 404 - Page Not Found</p>);
