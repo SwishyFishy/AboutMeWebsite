@@ -7,11 +7,11 @@ import '../styles/Layout.css';
 function Layout()
 {
     return(
-        <>
+        <div id="layout">
             <Header/>
             <Outlet/>
             <Footer/>
-        </>
+        </div>
     );
 }
 
