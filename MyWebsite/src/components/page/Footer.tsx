@@ -3,8 +3,8 @@ import '../../styles/Footer.css';
 function Footer()
 {
     return(
-        <div id="Footer">
-            <span>&copy; 2025 Jonah Galloway-Fenwick. All Rights Reserved.</span>
+        <div id="footer">
+            <footer>&copy; 2025 Jonah Galloway-Fenwick. All Rights Reserved.</footer>
         </div>
     );
 }
