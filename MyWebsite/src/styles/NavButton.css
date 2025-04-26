@@ -1,4 +1,4 @@
-a{  
+a.nav_button{  
     background-color: var(--accent-primary);
     color: var(--text);
 
@@ -9,6 +9,11 @@ a{
     border: .2em solid var(--accent-secondary);
 }
 
-a.active{
+a.nav_button:hover{
+    background-color: var(--accent-secondary);
+    color: light-dark(var(--background), var(--text)); /*Always use light text for contrast*/
+}
+
+a.nav_button.active{
     background-color: var(--highlight);
 }

@@ -12,7 +12,7 @@ function NavButton(props: props_NavButton)
     return(
         <NavLink 
         className={({ isActive}: {isActive: boolean}) => 
-            isActive ? "active" : ""
+            isActive ? "active nav_button" : "nav_button"
         } 
         to={props.url}>
             {props.title}
