@@ -1,10 +1,11 @@
 import TabbedFolder from "../components/page/TabbedFolder";
+import CaptionedPicture from "../components/CaptionedPicture";
 
 function AboutMe()
 {
     return(
         <TabbedFolder>
-            <p>Hello World</p>
+            <CaptionedPicture caption="" image="me.png" alt="A picture of Jonah"/>
         </TabbedFolder>
     );
 }
