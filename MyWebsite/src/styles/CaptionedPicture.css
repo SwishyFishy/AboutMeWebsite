@@ -1,0 +1,7 @@
+#captioned_picture{
+    width: fit-content;
+}
+
+#captioned_picture figcaption{
+    text-align: center;
+}
