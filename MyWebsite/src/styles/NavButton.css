@@ -4,6 +4,7 @@ a.nav_button{
 
     font-size: large;
     text-decoration: none;
+    text-wrap-mode: nowrap;
 
     padding: .1em;
     border: .2em solid var(--accent-secondary);
