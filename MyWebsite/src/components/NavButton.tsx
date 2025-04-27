@@ -7,15 +7,15 @@ type props_NavButton = {
     title: string;
 }
 
-function NavButton(props: props_NavButton)
+function NavButton({url, title}: props_NavButton)
 {
     return(
         <NavLink 
         className={({ isActive}: {isActive: boolean}) => 
             isActive ? "active nav_button" : "nav_button"
         } 
-        to={props.url}>
-            {props.title}
+        to={url}>
+            {title}
         </NavLink>
     );
 }
