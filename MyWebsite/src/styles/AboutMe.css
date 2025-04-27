@@ -1,0 +1,8 @@
+#about_me{
+    display: flex;
+    flex-direction: row;
+}
+
+#about_me div{
+    max-width: 60vw;
+}
