@@ -1,3 +1,7 @@
 #captioned_picture figcaption{
     text-align: center;
 }
+
+#captioned_picture img{
+    width: 100%;
+}
