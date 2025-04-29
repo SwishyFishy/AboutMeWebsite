@@ -3,8 +3,7 @@ import ErrorPage from "./ErrorPage";
 import AboutMe from "./AboutMe";
 import MyCv from "./MyCv";
 import ContactMe from "./ContactMe";
-import SmallProjects from "./SmallProjects";
-import LargeProjects from "./LargeProjects";
+import Projects from "./Projects";
 
 const routes = [
     {
@@ -25,13 +24,9 @@ const routes = [
                 element: <ContactMe/>
             },
             {
-                path: "/smallprojects",
-                element: <SmallProjects/>
-            },
-            {
-                path: "/largeprojects",
-                element: <LargeProjects/>
-            },
+                path: "/projects",
+                element: <Projects/>
+            }
         ]
     }
 ];
