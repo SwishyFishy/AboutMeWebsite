@@ -5,13 +5,45 @@
 
     padding: .5em 0em 1em 1em;
     border-bottom: 1em solid var(--accent-primary);
+
+    /* Alterations for small screens */
+    @media (max-width: 60em)
+    {
+        flex-direction: column;
+        justify-content: left;
+    }
 }
 
 #header header h1{
     margin: 0em;
     margin-right: 2em;
+
+    /* Alterations for small screens */
+    @media (max-width: 60em)
+    {
+        margin-right: 0em;
+    }
+}
+
+#header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    /* Alterations for small screens */
+    @media (max-width: 60em)
+    {
+        width: 100%;
+        margin: .75em .25em 0em .25em;
+    }
 }
 
 #header nav > *{
     margin-left: .75em;
+    
+    /* Alterations for small screens */
+    @media (max-width: 60em)
+    {
+        margin: 0em;
+    }
 }
