@@ -10,7 +10,7 @@ function Header()
                 <h1>Jonah Galloway-Fenwick</h1>
                 <nav>
                     <NavButton url="/" title="About Me"/>
-                    <NavButton url="/cv" title="My Cv"/>
+                    <NavButton url="/cv" title="My CV"/>
                     <NavButton url="/contact" title="Contact Me"/>
                     <NavButton url="/projects" title="Projects"/>
                 </nav>
