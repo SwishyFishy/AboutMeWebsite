@@ -19,7 +19,7 @@ function AboutMe()
                     I attended Trent University for 4 years between 2021 and 2025, graduating with a BSc in Computer Sciences and an overall GPA frustratingly close to 90%. During that time, in addition to my job at JCI, I also ran the institutiuon's Magic: the Gathering club. I rebuilt it from the husk of its former self that I took over upon my arrival into a small but flourishing community by the time I left.
                 </p>
                 <p>
-                    I'm currently working at JCI McDonalds as a full-time shift manager. I started in June of 2021, and reached my current position in January of 2024.I've become something of a specialist - informally, at least - regularly closing a location in a Walmart superstore. I have very few team members and a lot of responsibilities to attend to, to ensure that we don't stay late and everything is ready for the next day's open. I'm proud to say that I'm very good at it.
+                    I'm currently working at JCI McDonalds as a full-time shift manager. I started in June of 2021, and reached my current position in January of 2024. I've become something of a specialist - informally, at least - regularly closing a location in a Walmart superstore. I have very few team members and a lot of responsibilities to attend to, to ensure that we don't stay late and everything is ready for the next day's open. I'm proud to say that I'm very good at it.
                 </p>
             </div>
         </div>
