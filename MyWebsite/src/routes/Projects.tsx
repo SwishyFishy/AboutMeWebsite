@@ -1,6 +1,6 @@
-function SmallProjects()
+function Projects()
 {
-    return(<p>Hello SmallProjects</p>);
+    return(<p>Hello Projects</p>);
 }
 
-export default SmallProjects;
+export default Projects;
