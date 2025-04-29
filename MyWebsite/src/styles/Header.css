@@ -7,10 +7,12 @@
     border-bottom: 1em solid var(--accent-primary);
 
     /* Alterations for small screens */
-    @media (max-width: 60em)
+    @media (max-width: 55em)
     {
         flex-direction: column;
         justify-content: left;
+
+        padding: .5em .5em 1em .5em;
     }
 }
 
@@ -19,7 +21,7 @@
     margin-right: 2em;
 
     /* Alterations for small screens */
-    @media (max-width: 60em)
+    @media (max-width: 55em)
     {
         margin-right: 0em;
     }
@@ -31,7 +33,7 @@
     justify-content: space-around;
 
     /* Alterations for small screens */
-    @media (max-width: 60em)
+    @media (max-width: 55em)
     {
         width: 100%;
         margin: .75em .25em 0em .25em;
@@ -42,7 +44,7 @@
     margin-left: .75em;
     
     /* Alterations for small screens */
-    @media (max-width: 60em)
+    @media (max-width: 55em)
     {
         margin: 0em;
     }
