@@ -1,12 +1,41 @@
 #about_me{
     display: flex;
     flex-direction: row;
+
+    /* Alterations for small screens */
+    @media (max-width: 55em)
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#about_me h2{
+    text-align: left;
+
+    /* Alterations for small screens */
+    @media (max-width: 55em)
+    {
+        text-align: center;
+    }
 }
 
 #about_me #captioned_picture{
     max-width: 50vw;
+
+    /* Alterations for small screens */
+    @media (max-width: 55em)
+    {
+        max-width: 100vw;
+    }
 }
 
 #about_me div{
     max-width: 60%;
+
+    /* Alterations for small screens */
+    @media (max-width: 55em)
+    {
+        max-width: 90%;
+    }
 }
