@@ -10,10 +10,10 @@ function AboutMe()
             <div>
                 <h2>About Me</h2>
                 <p>
-                    Hi there! I'm Jonah, a recent Trent University computer science graduate and current full-time shift manager at JCI McDonalds in Peterborough, ON, Canada. This here's a little site I've been working on to show off myself and my projects. The nav bar at the top can take you to my CV, contact information, and some project galleries.
+                    Hi there! I'm Jonah, a recent Trent University computer science graduate and current full-time shift manager at JCI McDonalds in Peterborough, ON, Canada.
                 </p>
                 <p>
-                    Perhaps unsurprisingly, I enjoy programming. I'm especially fond of data management and algorithm design, but frontend and backend web development are both entertaining too. I've dabbled in machine learning before, and would like to do more of it. Beyond that, I like video games (mainly roguelikes and action/survial games) and Magic: the Gathering.
+                    Perhaps unsurprisingly, I enjoy programming. I'm especially fond of data management and algorithm design, but I'm also quite fond of front and backend web development. I've also dabbled in machine learning before, and would like to do more of it. In my free time, I like to play video games (mainly roguelikes and story-driven action/FPS games) and Magic: the Gathering.
                 </p>
                 <p>
                     I attended Trent University for 4 years between 2021 and 2025, graduating with a BSc in Computer Sciences and an overall GPA frustratingly close to 90%. During that time, in addition to my job at JCI, I also ran the institutiuon's Magic: the Gathering club. I rebuilt it from the husk of its former self that I took over upon my arrival into a small but flourishing community by the time I left.
