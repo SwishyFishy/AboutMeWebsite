@@ -1,5 +1,5 @@
-#captioned_figure figure{
-    min-width: 100%;
+#captioned_picture figure{
+    margin: 0em;
 }
 
 #captioned_picture figcaption{
