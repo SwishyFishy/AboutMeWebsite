@@ -21,6 +21,7 @@
 }
 
 #about_me #captioned_picture{
+    min-width: 20em;
     max-width: 50vw;
 
     /* Alterations for small screens */
@@ -31,7 +32,7 @@
 }
 
 #about_me div{
-    max-width: 60%;
+    max-width: 72em;
 
     /* Alterations for small screens */
     @media (max-width: 55em)
