@@ -1,6 +1,16 @@
+import TabbedFolder from "../components/page/TabbedFolder";
+
 function MyCv()
 {
-    return(<p>Hello MyCv</p>);
+    return(
+        <div id="my_cv">
+            <TabbedFolder tabs={['1', '2', '3']}>
+                <p>P1</p>
+                <p>P2</p>
+                <p>P3</p>
+            </TabbedFolder>
+        </div>
+    );
 }
 
 export default MyCv;
