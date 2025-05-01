@@ -27,23 +27,33 @@ function MyCv()
                         <span>Management</span>
                     </li>
                     <li>
+                        <span>Coaching</span>
+                    </li>
+                    <li>
                         <span>Web Development</span>
                         <span>HTML, CSS, JavaScript, TypeScript, React, PHP</span>
                     </li>
                     <li>
                         <span>Data Structures</span>
-                        <span>Java, C#</span>
+                        <span>Python, Java, C++, C#</span>
                     </li>
                     <li>
                         <span>Machine Learning</span>
-                        <span>C, C++</span>
+                        <span>C++</span>
                     </li>
                     <li>
                         <span>Scripting</span>
-                        <span>Python</span>
+                        <span>Bash, Python, C, C++</span>
+                    </li>
+                    <li>
+                        <span>Games</span>
+                        <span>JavaScript, TypeScript, Python, Java, C#</span>
                     </li>
                     <li>
                         <span>Excel</span>
+                    </li>
+                    <li>
+                        <span>Git</span>
                     </li>
                 </ul>
             </section>
