@@ -6,6 +6,12 @@ function MyCv()
         <div id="my_cv">
             <section id="me">
                 <h2>Core Attributes</h2>
+                <ul>
+                    <li><span>Friendly</span></li>
+                    <li><span>Quick & Eager Learner</span></li>
+                    <li><span>Passionate</span></li>
+                    <li><span>Eye For Detail</span></li>
+                </ul>
             </section>
             <section id="skills">
                 <h2>Skills</h2>
@@ -33,8 +39,11 @@ function MyCv()
                         <span>C, C++</span>
                     </li>
                     <li>
-                        <span>Other Languages</span>
+                        <span>Scripting</span>
                         <span>Python</span>
+                    </li>
+                    <li>
+                        <span>Excel</span>
                     </li>
                 </ul>
             </section>
