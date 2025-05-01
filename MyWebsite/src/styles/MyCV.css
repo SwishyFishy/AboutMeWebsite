@@ -1,0 +1,39 @@
+#my_cv{
+    display: grid;
+    grid-template-columns: 50fr 50fr;
+    grid-template-rows: 33fr 34fr 33fr;
+}
+
+#my_cv section:nth-child(2), #my_cv section:nth-child(3){
+    grid-row: span 2;
+}
+
+#my_cv section{
+    background-color: var(--accent-primary);
+
+    padding: .5em;
+    border: .5em solid var(--accent-secondary);
+    margin: 1em;
+}
+
+#my_cv section h2{
+    margin: 0em;
+}
+
+#my_cv section ul{
+    list-style-type: none;
+
+    padding: 0em;
+}
+
+#my_cv section ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding-top: .2em;
+}
+
+#my_cv section ul li span:last-child{
+    width: 80%;
+}
