@@ -7,8 +7,8 @@ function MyCv()
             <section id="me">
                 <h2>Core Attributes</h2>
                 <ul>
-                    <li><span>Friendly</span></li>
-                    <li><span>Quick & Eager Learner</span></li>
+                    <li><span>Outgoing</span></li>
+                    <li><span>Eager Learner</span></li>
                     <li><span>Passionate</span></li>
                     <li><span>Eye For Detail</span></li>
                 </ul>
@@ -50,10 +50,13 @@ function MyCv()
                         <span>JavaScript, TypeScript, Python, Java, C#</span>
                     </li>
                     <li>
+                        <span>Git</span>
+                    </li>
+                    <li>
                         <span>Excel</span>
                     </li>
                     <li>
-                        <span>Git</span>
+                        <span>SQL</span>
                     </li>
                 </ul>
             </section>
