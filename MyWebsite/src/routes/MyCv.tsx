@@ -57,11 +57,22 @@ function MyCv()
                     </li>
                 </ul>
             </section>
-            <section id="education">
-                <h2>Education</h2>
-            </section>
             <section id="work">
                 <h2>Work Experience</h2>
+            </section>
+            <section id="education">
+                <h2>Education</h2>
+                <div className="education_interval">
+                    <h3>Highschool</h3>
+                    <span>Adam Scott C & V.I., Peterborough, ON</span>
+                    <span>GPA 93.26%</span>
+                </div>
+                <div className="education_interval">
+                    <h3>University</h3>
+                    <span>Trent University, Peterborough, ON</span>
+                    <span>B.Sc. Computer Sciences</span>
+                    <span>GPA 88.95%</span>
+                </div>
             </section>
         </div>
     );
