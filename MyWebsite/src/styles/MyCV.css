@@ -2,6 +2,12 @@
     display: grid;
     grid-template-columns: 50fr 50fr;
     grid-template-rows: 33fr 34fr 33fr;
+
+    /* Adjustment for small screens */
+    @media (max-width: 55em){
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 #my_cv section:nth-child(2), #my_cv section:nth-child(3){
@@ -34,6 +40,15 @@
     padding-top: .2em;
 }
 
+#my_cv section ul li span:first-child{
+    min-width: 10em;
+}
+
 #my_cv section ul li span:last-child{
     width: 80%;
+
+    /* Adjustment for small screens */
+    @media (max-width: 55em){
+        width: 50%;
+    }
 }
