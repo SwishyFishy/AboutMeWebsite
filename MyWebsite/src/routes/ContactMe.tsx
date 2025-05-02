@@ -1,5 +1,5 @@
-import FormTextInput from "../components/FormTextInput";
-import FormSubmit from "../components/FormSubmit";
+import FormTextInput from "../components/forms/FormTextInput";
+import FormSubmit from "../components/forms/FormSubmit";
 
 import '../styles/ContactMe.css';
 

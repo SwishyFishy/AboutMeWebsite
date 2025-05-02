@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import '../styles/FormTextInput.css';
+import '../../styles/FormTextInput.css';
 
 type props_FormTextInput = {
     label: string,
