@@ -17,3 +17,8 @@
     font-family: Tahoma, Arial, Helvetica, sans-serif;
     font-size: medium;
 }
+
+/* Style-By-Class */
+.hidden{
+    display: none;
+}
