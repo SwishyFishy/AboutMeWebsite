@@ -6,9 +6,10 @@ type props_FormTextInput = {
     label: string,
     id: string,
     placeholder: string;
+    large: boolean
 }
 
-function FormTextInput({label, id, placeholder}: props_FormTextInput)
+function FormTextInput({label, id, placeholder, large}: props_FormTextInput)
 {
     // Store input data in state
     const [text, setText] = useState<string>("");
@@ -17,9 +18,11 @@ function FormTextInput({label, id, placeholder}: props_FormTextInput)
     }
 
     return(
-        <div id="form_text_input">
+        <div id="form_text_input" className={large ? "textarea" : "textinput"}>
             <label htmlFor={id}>{label}: </label>
-            <input type="text" name={id} id={id} placeholder={placeholder} value={text} onChange={handleInput}/>
+            {large ?
+            <textarea name={id} id={id} placeholder={placeholder} value={text} onChange={handleInput}/> :
+            <input type="text" name={id} id={id} placeholder={placeholder} value={text} onChange={handleInput}/>}
         </div>
     );
 }
