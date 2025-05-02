@@ -1,5 +1,4 @@
 :root{
-
     /* Colour Definitions */
     color-scheme: light dark;
 
@@ -21,4 +20,14 @@
 /* Style-By-Class */
 .hidden{
     display: none;
+}
+
+/* Override CSS Defaults */
+input{
+    font-size: small;
+}
+
+textarea{
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: small;
 }
