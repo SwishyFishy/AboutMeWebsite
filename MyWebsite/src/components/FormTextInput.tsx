@@ -1,11 +1,12 @@
 import { useState } from "react";
 
 type props_FormTextInput = {
+    label: string,
     id: string,
     placeholder: string;
 }
 
-function FormTextInput({id, placeholder}: props_FormTextInput)
+function FormTextInput({label, id, placeholder}: props_FormTextInput)
 {
     // Store input data in state
     const [text, setText] = useState<string>("");
@@ -15,7 +16,7 @@ function FormTextInput({id, placeholder}: props_FormTextInput)
 
     return(
         <div id="form_text_input">
-            <label htmlFor={id}>Email:</label>
+            <label htmlFor={id}>{label}: </label>
             <input type="text" name={id} id={id} placeholder={placeholder} value={text} onChange={handleInput}/>
         </div>
     );
