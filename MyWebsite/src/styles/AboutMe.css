@@ -2,6 +2,8 @@
     display: flex;
     flex-direction: row;
 
+    margin: 1em;
+
     /* Alterations for small screens */
     @media (max-width: 55em)
     {
@@ -23,6 +25,9 @@
 #about_me #captioned_picture{
     min-width: 20em;
     max-width: 50vw;
+
+    margin-left: 0em;
+    margin-top: 0em;
 
     /* Alterations for small screens */
     @media (max-width: 55em)
