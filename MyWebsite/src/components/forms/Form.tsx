@@ -5,14 +5,10 @@ import { PropsWithChildren } from "react";
 export const CONTEXT_FormData: React.Context<any> = createContext({});
 export const CONTEXT_SetFormData: React.Context<Function> = createContext({} as unknown as Function);
 
-type props_Form = {
-    initialValues: object
-}
-
-function Form<T extends object>({initialValues, children}: PropsWithChildren<props_Form>)
+function Form<T extends object>({initialValues, children}: PropsWithChildren<{initialValues: T}>)
 {
     // State to manage form elements
-    const [values, setValues] = useState<T>(initialValues as T);
+    const [values, setValues] = useState<T>(initialValues);
     const handleInput = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setValues({...values, [e.target.id]: e.target.value} as T);
     }
