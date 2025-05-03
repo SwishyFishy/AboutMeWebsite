@@ -1,3 +1,4 @@
+import Form from "../components/forms/Form";
 import FormTextInput from "../components/forms/FormTextInput";
 import FormSubmit from "../components/forms/FormSubmit";
 
@@ -6,13 +7,13 @@ import '../styles/ContactMe.css';
 function ContactMe()
 {
     return(
-        <div id="contact_me">
+        <div id="contact_me"> 
             <h2>Contact Me</h2>
-            <form>
-                <FormTextInput label="Email" id="email" placeholder="Your email" large={false}/>
-                <FormTextInput label="Message" id="message" placeholder="Your message" large={true}/>
-                <FormSubmit value="Send" callback={(e: any) => {e.preventDefault(); console.log("called");}}/>
-            </form>
+            <Form>
+                <FormTextInput label="Email" id="email" placeholder="Your email" isArea={false}/>
+                <FormTextInput label="Message" id="message" placeholder="Your message" isArea={true}/>
+                <FormSubmit value="Send" submissionTrigger={(e: any) => {e.preventDefault(); console.log("called");}}/>
+            </Form>
         </div>
     );
 }
