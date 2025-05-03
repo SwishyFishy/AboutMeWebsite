@@ -1,14 +1,14 @@
 type props_FormSubmit = {
     value: string,
-    callback: any
+    submissionTrigger: any
 }
 
-function FormSubmit({value, callback}: props_FormSubmit)
+function FormSubmit({value, submissionTrigger}: props_FormSubmit)
 {
     return(
         <div id="form_submit">
             <label htmlFor="submit" className="hidden"></label>
-            <input type="submit" name="submit" id="submit" value={value} onClick={callback}/>
+            <input type="submit" name="submit" id="submit" value={value} onClick={submissionTrigger}/>
         </div>
     );
 }
