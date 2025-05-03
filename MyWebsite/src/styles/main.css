@@ -24,7 +24,11 @@
 
 /* Override CSS Defaults */
 h1, h2, h3, h4, h5, h6{
-    margin: 0em;
+    margin: 0rem;
+}
+
+p, form, ul, ol, dl{
+    margin: 1rem 0rem 1rem 0rem;
 }
 
 input{
