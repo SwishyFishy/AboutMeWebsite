@@ -1,3 +1,5 @@
+import '../../styles/FormSubmit.css';
+
 type props_FormSubmit = {
     value: string,
     submissionTrigger: any
