@@ -12,8 +12,8 @@ type props_FormTextInput = {
 
 function FormTextInput({label, id, placeholder, isArea}: props_FormTextInput)
 {
-    const data = useContext(CONTEXT_FormData);
-    const setData = useContext(CONTEXT_SetFormData);
+    const data: object = useContext(CONTEXT_FormData);
+    const setData: Function = useContext(CONTEXT_SetFormData);
 
     return(
         <div id="form_text_input" className={isArea ? "textarea" : "textinput"}>
