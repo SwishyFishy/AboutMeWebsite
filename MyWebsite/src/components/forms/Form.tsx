@@ -2,8 +2,8 @@ import { useState, createContext } from "react";
 import { PropsWithChildren } from "react";
 
 // Create the context that form elements reference to get/set for element values
-export const CONTEXT_FormData: React.Context<any> = createContext({});
-export const CONTEXT_SetFormData: React.Context<Function> = createContext({} as unknown as Function);
+export const CONTEXT_FormData: React.Context<object> = createContext({});
+export const CONTEXT_SetFormData: React.Context<Function> = createContext(new Function);
 
 function Form<T extends object>({initialValues, children}: PropsWithChildren<{initialValues: T}>)
 {
