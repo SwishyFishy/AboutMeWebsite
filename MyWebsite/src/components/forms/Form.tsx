@@ -10,7 +10,7 @@ function Form<T extends object>({initialValues, children}: PropsWithChildren<{in
     // State to manage form elements
     const [values, setValues] = useState<T>(initialValues);
     const handleInput = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-        setValues({...values, [e.target.id]: e.target.value} as T);
+        setValues({...values, [e.target.id]: e.target.value});
     }
 
     return(
