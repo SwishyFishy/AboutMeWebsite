@@ -31,11 +31,6 @@ p, form, ul, ol, dl{
     margin: 1rem 0rem 1rem 0rem;
 }
 
-input{
-    font-size: small;
-}
-
-textarea{
-    font-family: Tahoma, Arial, Helvetica, sans-serif;
+input, textarea{
     font-size: small;
 }
