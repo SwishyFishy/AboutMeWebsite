@@ -33,4 +33,5 @@ p, form, ul, ol, dl{
 
 input, textarea{
     font-size: small;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
 }
