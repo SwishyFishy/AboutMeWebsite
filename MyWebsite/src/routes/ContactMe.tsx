@@ -12,7 +12,7 @@ function ContactMe()
             <Form<{email: string, message: string}> initialValues={{email: '', message: ''}}>
                 <FormTextInput label="Email" id="email" placeholder="Your email" isArea={false}/>
                 <FormTextInput label="Message" id="message" placeholder="Your message" isArea={true}/>
-                <FormSubmit value="Send" submissionTrigger={(e: any) => {e.preventDefault(); console.log("called");}}/>
+                <FormSubmit value="Send" submissionTrigger={(e: MouseEvent) => {e.preventDefault(); console.log("called");}}/>
             </Form>
         </div>
     );
