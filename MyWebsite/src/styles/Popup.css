@@ -1,0 +1,19 @@
+#popup{
+    width: 20em;
+    max-width: 80vw;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    background-color: var(--accent-primary);
+    font-size: large;
+
+    padding: .5em;
+    border: .25em solid var(--accent-secondary);
+    margin: 1em;
+}
+
+#popup input{
+    float: right;
+}
