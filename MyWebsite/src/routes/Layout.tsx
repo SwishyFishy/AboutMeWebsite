@@ -11,7 +11,8 @@ function Layout()
         <div id="layout">
             <Header/>
             <Outlet/>
-            <Popup display={!window.matchMedia('(prefers-color-scheme: light)').matches}>This site looks better in dark mode!</Popup>
+            <Popup display={window.screen.width < 500}>This site looks better on desktop!</Popup>
+            <Popup display={window.matchMedia('(prefers-color-scheme: light)').matches}>This site looks better in dark mode!</Popup>
             <Footer/>
         </div>
     );
