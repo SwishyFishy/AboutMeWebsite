@@ -51,7 +51,7 @@
     }
 }
 
-#my_cv section .education_interval{
+#my_cv section .interval{
     display: grid;
     grid-template-columns: 25fr 75fr;
     gap: .2em;
@@ -66,12 +66,16 @@
     }
 }
 
-#my_cv section .education_interval h3{
-    grid-row: span 2;
+#my_cv section .interval h3{
+    grid-row: span 3;
 
     min-width: 10rem;
     
     margin: 0em;
+}
+
+#my_cv section .interval p{
+    grid-column: span 2;
 }
 
 #my_cv section .education_interval span{

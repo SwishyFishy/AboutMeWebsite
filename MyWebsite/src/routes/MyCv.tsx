@@ -22,6 +22,7 @@ function MyCv()
                     </li>
                     <li>
                         <span>First Aid</span>
+                        <span>Basic care + CPR</span>
                     </li>
                     <li>
                         <span>Management</span>
@@ -62,15 +63,23 @@ function MyCv()
             </section>
             <section id="work">
                 <h2>Work Experience</h2>
+                <div className="interval">
+                    <h3>JCI McDonalds</h3>
+                    <span>4 years</span>
+                    <span>Shift Manager for 1.5 years</span>
+                    <p>
+                        I started at JCI McDonalds immediately after graduating highschool in June 2021, delayed by the pandemic. After about a year and a half, I moved up to the Crew Trainer (or Junior Leader) position. There, I trained and verified at least 15 new hires on various stations. After this, I moved up to Area Lead, acting as a station leader for wherever I was positioned in the restaurant. In Janurary 2024, I was fully certified as a Shift Manager. While not the fastest progression, I spent all but the summers working part-time while in school at Trent, and was working full time otherwise.
+                    </p>
+                </div>
             </section>
             <section id="education">
                 <h2>Education</h2>
-                <div className="education_interval">
+                <div className="interval">
                     <h3>Highschool</h3>
                     <span>Adam Scott C & V.I., Peterborough, ON</span>
                     <span>GPA 93.26%</span>
                 </div>
-                <div className="education_interval">
+                <div className="interval">
                     <h3>University</h3>
                     <span>Trent University, Peterborough, ON</span>
                     <span>B.Sc. Computer Sciences</span>
