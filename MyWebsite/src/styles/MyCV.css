@@ -34,7 +34,7 @@
     flex-direction: row;
     justify-content: space-between;
 
-    padding-top: .2em;
+    padding-bottom: .2em;
 }
 
 #my_cv section ul li span:first-child{
@@ -78,6 +78,10 @@
     grid-column: span 2;
 }
 
-#my_cv section .education_interval span{
+#my_cv section .interval ul{
+    margin: 0em;
+}
+
+#my_cv section .interval span{
     grid-column-start: 2;
 }
