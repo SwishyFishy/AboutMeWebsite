@@ -8,21 +8,26 @@
 
 #form_text_input :focus{
     outline: none;
+    border-bottom: .3em solid var(--accent-secondary);
+}
+
+#form_text_input textarea:focus{
+    border-right: .3em solid var(--accent-secondary);
 }
 
 /* Styles for inputs */
 #form_text_input.textinput{
-    width: 20em;
+    width: 40em;
 }
 
 #form_text_input input{
     background-color: var(--background);
     color: var(--text);
 
-    width: 10rem;
+    width: 30rem;
 
     border: none;
-    border-right: .3em solid transparent;         /* Needed to align left edge with text-areas */
+    border-right: .3em solid transparent;               /* Needed to align left edge with text-areas */
     border-bottom: .3em solid var(--accent-primary);
 }
 
