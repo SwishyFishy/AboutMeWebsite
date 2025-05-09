@@ -32,6 +32,9 @@ p, form, ul, ol, dl{
 }
 
 input, textarea{
-    font-size: small;
     font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: medium;
+
+    padding: 0em;
+    margin: 0em;
 }
