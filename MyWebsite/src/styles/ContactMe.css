@@ -1,3 +1,12 @@
 #contact_me{
     margin: 1em;
 }
+
+#contact_me h2{
+    
+    /* Adjustment for small screens */
+    @media (max-width: 55em)
+    {
+        text-align: center;
+    }
+}
