@@ -1,0 +1,12 @@
+#form_submit input{
+    cursor: pointer;
+
+    background-color: var(--accent-primary);
+    color: var(--text);
+
+    width: 12em;
+
+    padding: .2em;
+    border: .3em solid var(--accent-secondary);
+    margin-top: .8em;
+}
