@@ -91,7 +91,7 @@ function MyCv()
                     <h3>University</h3>
                     <span>Trent University, Peterborough, ON</span>
                     <span>B.Sc. Computer Sciences</span>
-                    <span>GPA 88.95%</span>
+                    <span>GPA 88.90%</span>
                 </div>
             </section>
         </div>
