@@ -14,13 +14,13 @@ type formValues = {
 function ContactMe()
 {
     return(
-        <div id="contact_me"> 
+        <div id="contact_me">
             <h2>Contact Me</h2>
             <Form<formValues> initialValues={{name: '', email: '', message: ''}}>
                 <FormTextInput label="Name" id="name" placeholder="Your name" isArea={false}/>
                 <FormEmailInput label="Email" id="email" placeholder="Your email"/>
                 <FormTextInput label="Message" id="message" placeholder="Your message" isArea={true}/>
-                <FormSubmit value="Send" submissionTrigger={(e: any) => {e.preventDefault(); console.log("called");}}/>
+                <FormSubmit value="Send"/>
             </Form>
         </div>
     );
