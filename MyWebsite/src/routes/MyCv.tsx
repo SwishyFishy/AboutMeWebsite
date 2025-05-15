@@ -33,7 +33,7 @@ function MyCv()
                         <span>Word, Excel</span>
                     </li>
                     <li>
-                        <span>Instruction</span>
+                        <span>Training and Coaching</span>
                     </li>
                     <li>
                         <span>Frontend Web Dev</span>
@@ -74,7 +74,7 @@ function MyCv()
                     <span>4 years</span>
                     <span>Shift Manager for 1.5 years</span>
                     <p>
-                        I started at JCI McDonalds in June 2021. After about a year and a half, I moved up to the Crew Trainer (or Junior Leader) position. There, I trained and verified at least 15 new hires on various stations. In Janurary 2024, I was fully certified as a Shift Manager. I worked full time during the summer months and 16-24h per week part-time while attending classes at University.
+                        I started at JCI McDonalds in June 2021. After about a year and a half, I moved up to the Crew Trainer (or Junior Leader) position. There, I trained and verified at least 15 new hires on various stations. In Janurary 2024, I was fully certified as a Shift Manager. I work full-time during the summer months and worked 16-24h per week part-time while attending classes at University.
                     </p>
                     <h4>Responsibilities</h4>
                     <ul>
