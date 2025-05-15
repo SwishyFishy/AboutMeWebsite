@@ -13,7 +13,7 @@ function Form<T extends object>({initialValues, children}: PropsWithChildren<{in
     const handleInput = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setValues({...values, [e.target.id]: e.target.value});
     }
-    const [error, setError] = useState<boolean>(false);
+    const [error, setError] = useState<string>("");
 
     // Manage form submission
     const [state, submitForm] = useForm(import.meta.env.VITE_CONTACT_FORM_CODE);
@@ -25,7 +25,7 @@ function Form<T extends object>({initialValues, children}: PropsWithChildren<{in
             if (value == "")
             {
                 isValid = false;
-                setError(true);
+                setError(key);
                 break;
             }
         }
@@ -37,7 +37,7 @@ function Form<T extends object>({initialValues, children}: PropsWithChildren<{in
 
             // Reset the form elements
             setValues(initialValues);
-            setError(false);
+            setError("");
         }
         else
         {
@@ -51,7 +51,7 @@ function Form<T extends object>({initialValues, children}: PropsWithChildren<{in
                 <form onSubmit={handleSubmit}>
                     {children}
                 </form>
-                <span id="error" className={error ? "italics" : "hidden"}>Please fill out all fields.</span>
+                <span id="error" className={error == "" ? "hidden" : "italics"}>Please fill out {error} field.</span>
             </CONTEXT_SetFormData>
         </CONTEXT_FormData>
     )
