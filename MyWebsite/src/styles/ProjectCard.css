@@ -1,0 +1,35 @@
+#project_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--accent-primary);
+
+    width: 15em;
+    height: 25em;
+
+    padding: 0em .5em;
+    border: .5em solid var(--accent-secondary);
+    margin: 1em;
+}
+
+#project_card > *{
+    padding: .5rem 0rem;
+}
+
+#project_card div{
+    overflow-y: hidden;
+}
+
+#project_card a{
+    font-weight: bold;
+}
+
+#project_card a:visited{
+    color: var(--text);
+}
+
+#project_Card a:hover{
+    color: var(--background);
+}
