@@ -9,15 +9,19 @@ export type PopupDimensions = {
     top?: number,
     bottom?: number,
     left?: number,
-    right?: number
+    right?: number,
+    closeBtnTop?: number,
+    closeBtnBottom?: number,
+    closeBtnLeft?: number,
+    closeBtnRight?: number
 }
 
 type props_Popup = {
-    display: boolean,
-    type: "alert" | "window" | PopupDimensions
+    type: "alert" | "window" | PopupDimensions,
+    display: boolean
 }
 
-function Popup({display, type, children}: PropsWithChildren<props_Popup>)
+function Popup({type, display,children}: PropsWithChildren<props_Popup>)
 {
     // Track whether popup should be open or closed
     const [open, setOpen] = useState<boolean>(display);
@@ -29,9 +33,9 @@ function Popup({display, type, children}: PropsWithChildren<props_Popup>)
     }
 
     return(
-        <div id="popup" className={open ? "visible" : "hidden"}>
+        <div id="popup" className={[open ? "visible" : "hidden", typeof type == "string" ? type : "custom"].join(' ')}>
             {children}
-            <input type="submit" id="close" name="close" className={type=="alert" ? "horizontal" : "vertical"} value="X" onClick={(e: any) => handleClose(e)}/>
+            <input type="submit" id="close" name="close" value="X" onClick={(e: any) => handleClose(e)}/>
         </div>
     );
 }

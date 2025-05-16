@@ -1,9 +1,4 @@
 #popup.visible{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
     max-width: 80vw;
 
     position: fixed;
@@ -13,13 +8,29 @@
     background-color: var(--accent-primary);
     font-size: large;
 
-    padding: .5em;
     border: .25em solid var(--accent-secondary);
     margin: 1em;
 
     box-shadow: 0em 0em .5em var(--accent-primary);
 }
 
+#popup.visible.window, #popup.visible.custom{
+    top: 0;
+    left: 0;
+
+    padding-top: 1em;
+}
+
+#popup.visible.alert{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: .5em;
+}
+
+/* Close Button Styling */
 #popup.visible input{
     background-color: var(--accent-secondary);
 
@@ -27,12 +38,14 @@
     border-radius: 0em;
 }
 
-#popup.visible input.horizontal{
-    margin-left: .5em;
-}
-
-#popup.visible input.vertical{
+#popup.visible.window input, #popup.visible.custom input{
     position: absolute;
     top: 0;
     right: 0;
+
+    font-size: xx-small;
+}
+
+#popup.visible.alert input{
+    margin-left: .5em;
 }
