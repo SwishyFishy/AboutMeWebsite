@@ -22,6 +22,11 @@
     overflow-y: hidden;
 }
 
+#project_card div p:hover{
+    cursor: pointer;
+    font-style: italic;
+}
+
 #project_card a{
     font-weight: bold;
 }
