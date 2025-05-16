@@ -11,16 +11,16 @@ type props_Popup = {
 function Popup({display, children}: PropsWithChildren<props_Popup>)
 {
     // Track whether popup should be open or closed
-    const [closed, setClosed] = useState<boolean>(!display);
+    const [open, setOpen] = useState<boolean>(display);
 
     // Close the popup
     const handleClose = (e: any) => {
         e.preventDefault();
-        setClosed(true);
+        setOpen(false);
     }
 
     return(
-        <div id="popup" className={closed ? "hidden" : ""}>
+        <div id="popup" className={open ? "" : "hidden"}>
             {children}
             <input type="submit" id="close" name="close" value="X" onClick={(e: any) => handleClose(e)}/>
         </div>
