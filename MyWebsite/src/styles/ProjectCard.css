@@ -36,5 +36,5 @@
 }
 
 #project_card a:hover{
-    color: var(--background);
+    font-style: italic;
 }
