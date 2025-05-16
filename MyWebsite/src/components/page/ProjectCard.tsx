@@ -1,5 +1,7 @@
 import { PropsWithChildren } from "react";
 
+import CutoffParagraph from "../CutoffParagraph";
+
 import "../../styles/ProjectCard.css";
 
 type props_ProjectCard = {
@@ -14,9 +16,11 @@ function ProjectCard({title, icon, repo, children}: PropsWithChildren<props_Proj
         <div id="project_card">
             <h2>{title}</h2>
             <img src={icon} alt={`Thumbnail image for ${title} repository`} width="230" height="225"/>
-            <div>
-                {children}
-            </div>
+            {
+                (children as string).split('.').length - 1 > 1 ? 
+                <CutoffParagraph>{children}</CutoffParagraph> :
+                <p>{children}</p>
+            }
             <a rel="external" target="__blank" href={repo}>&gt;Repository&lt;</a>
         </div>
     );
