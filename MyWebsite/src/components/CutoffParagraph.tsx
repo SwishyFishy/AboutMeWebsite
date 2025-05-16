@@ -3,11 +3,7 @@ import { PropsWithChildren } from "react";
 
 import Popup from "./Popup";
 
-type props_CutoffParagraph = {
-    id: string
-}
-
-function CutoffParagraph({id, children}: PropsWithChildren<props_CutoffParagraph>)
+function CutoffParagraph({children}: PropsWithChildren)
 {
     // Set up the state
     const [fullText, setFullText] = useState<string>("");
@@ -23,6 +19,7 @@ function CutoffParagraph({id, children}: PropsWithChildren<props_CutoffParagraph
             throw new TypeError("CutoffParagraph children must be a string, not a ReactNode or HTMLElement");
         }
         
+        // Set the cut and full texts by splitting the cut text at the first period
         setFullText(children);
         setCutText(children.split('.', 1)[0] + "...");
     }, []);
@@ -35,7 +32,7 @@ function CutoffParagraph({id, children}: PropsWithChildren<props_CutoffParagraph
 
     return(
         <div id="cutoff_paragraph">
-            <p id={id} onClick={handleShowText}>
+            <p onClick={handleShowText}>
                 {cutText}
             </p>
             <Popup type="window" display={showFullText} setDisplay={setShowFullText}>{fullText}</Popup>
