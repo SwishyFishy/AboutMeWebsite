@@ -30,6 +30,6 @@
     color: var(--text);
 }
 
-#project_Card a:hover{
+#project_card a:hover{
     color: var(--background);
 }
