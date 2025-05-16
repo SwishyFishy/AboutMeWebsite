@@ -11,8 +11,8 @@ function Header()
                 <nav>
                     <NavButton url="/" title="About Me"/>
                     <NavButton url="/cv" title="My CV"/>
-                    <NavButton url="/contact" title="Contact Me"/>
                     <NavButton url="/projects" title="Projects"/>
+                    <NavButton url="/contact" title="Contact Me"/>
                 </nav>
             </header>
         </div>
