@@ -48,10 +48,12 @@ function Form<T extends object>({initialValues, children}: PropsWithChildren<{in
     return(
         <CONTEXT_FormData value={values ? values : {}}>
             <CONTEXT_SetFormData value={handleInput}>
-                <form onSubmit={handleSubmit}>
-                    {children}
-                </form>
-                <span id="error" className={error == "" ? "hidden" : "italics"}>Please fill out {error} field.</span>
+                <div id="form">
+                    <form onSubmit={handleSubmit}>
+                        {children}
+                    </form>
+                    <span id="error" className={error == "" ? "hidden" : "italics"}>Please fill out {error} field.</span>
+                </div>
             </CONTEXT_SetFormData>
         </CONTEXT_FormData>
     )
