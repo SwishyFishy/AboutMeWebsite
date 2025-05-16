@@ -1,6 +1,4 @@
 #popup.visible{
-    max-width: 80vw;
-
     position: fixed;
     bottom: 0;
     right: 0;
@@ -15,10 +13,13 @@
 }
 
 #popup.visible.window, #popup.visible.custom{
-    top: 0;
-    left: 0;
+    top: 10vh;
+    bottom: 10vh;
+    left: 30vw;
 
-    padding-top: 1em;
+    max-width: 40vw;
+
+    padding: 1em .5em .5em .5em;
 }
 
 #popup.visible.alert{
@@ -27,11 +28,15 @@
     justify-content: space-between;
     align-items: center;
 
+    max-width: 80vw;
+
     padding: .5em;
 }
 
 /* Close Button Styling */
 #popup.visible input{
+    cursor: pointer;
+
     background-color: var(--accent-secondary);
 
     padding: .25em .5em;
