@@ -4,17 +4,21 @@ import { PropsWithChildren } from "react";
 
 import '../styles/Popup.css';
 
-type props_Popup = {
-    display: boolean,
+export type PopupDimensions = {
     width?: number,
     height?: number,
     top?: number,
-    right?: number,
     bottom?: number,
-    left?: number
+    left?: number,
+    right?: number
 }
 
-function Popup({display, children}: PropsWithChildren<props_Popup>)
+type props_Popup = {
+    display: boolean,
+    type: "alert" | "window" | PopupDimensions
+}
+
+function Popup({display, type, children}: PropsWithChildren<props_Popup>)
 {
     // Track whether popup should be open or closed
     const [open, setOpen] = useState<boolean>(display);
