@@ -1,5 +1,9 @@
-#popup{
-    width: 20em;
+#popup.visible{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
     max-width: 80vw;
 
     position: fixed;
@@ -14,6 +18,6 @@
     margin: 1em;
 }
 
-#popup input{
-    float: right;
+#popup.visible input{
+    margin-left: .5em;
 }

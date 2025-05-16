@@ -5,7 +5,13 @@ import { PropsWithChildren } from "react";
 import '../styles/Popup.css';
 
 type props_Popup = {
-    display: boolean
+    display: boolean,
+    width?: number,
+    height?: number,
+    top?: number,
+    right?: number,
+    bottom?: number,
+    left?: number
 }
 
 function Popup({display, children}: PropsWithChildren<props_Popup>)
@@ -20,7 +26,7 @@ function Popup({display, children}: PropsWithChildren<props_Popup>)
     }
 
     return(
-        <div id="popup" className={open ? "" : "hidden"}>
+        <div id="popup" className={open ? "visible" : "hidden"}>
             {children}
             <input type="submit" id="close" name="close" value="X" onClick={(e: any) => handleClose(e)}/>
         </div>
