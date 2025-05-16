@@ -4,7 +4,7 @@ function Footer()
 {
     return(
         <div id="footer">
-            <footer>&copy; 2025 Jonah Galloway-Fenwick. All Rights Reserved.</footer>
+            <footer>&copy; {new Date().getFullYear()} Jonah Galloway-Fenwick. All Rights Reserved.</footer>
         </div>
     );
 }
