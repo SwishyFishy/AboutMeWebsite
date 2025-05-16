@@ -16,8 +16,23 @@
     padding: .5em;
     border: .25em solid var(--accent-secondary);
     margin: 1em;
+
+    box-shadow: 0em 0em .5em var(--accent-primary);
 }
 
 #popup.visible input{
+    background-color: var(--accent-secondary);
+
+    padding: .25em .5em;
+    border-radius: 0em;
+}
+
+#popup.visible input.horizontal{
     margin-left: .5em;
+}
+
+#popup.visible input.vertical{
+    position: absolute;
+    top: 0;
+    right: 0;
 }

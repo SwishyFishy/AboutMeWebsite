@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 import { PropsWithChildren } from "react";
 
 import '../styles/Popup.css';
@@ -32,7 +31,7 @@ function Popup({display, type, children}: PropsWithChildren<props_Popup>)
     return(
         <div id="popup" className={open ? "visible" : "hidden"}>
             {children}
-            <input type="submit" id="close" name="close" value="X" onClick={(e: any) => handleClose(e)}/>
+            <input type="submit" id="close" name="close" className={type=="alert" ? "horizontal" : "vertical"} value="X" onClick={(e: any) => handleClose(e)}/>
         </div>
     );
 }
