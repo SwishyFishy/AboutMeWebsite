@@ -1,19 +1,33 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { PropsWithChildren } from "react";
 
-function CutoffParagraph({children}: PropsWithChildren)
-{
-    const id: number = 1;
+type props_CutoffParagraph = {
+    id: string
+}
 
+function CutoffParagraph({id, children}: PropsWithChildren<props_CutoffParagraph>)
+{
+    // Set up the state
+    const [fullText, setFullText] = useState<string>("");
+    const [cutText, setCutText] = useState<string>("");
+
+    // Cut the text
     useEffect(() => {
-        const paragraph: string | null = document.getElementsByClassName(id.toString())[0].textContent;
-        console.log(paragraph);
+        
+        // Error checking
+        if (typeof children !== "string")
+        {
+            throw new TypeError("CutoffParagraph children must be a string, not a ReactNode or HTMLElement");
+        }
+        
+        setFullText(children);
+        setCutText(children.split('.', 1)[0] + "...");
     }, []);
 
     return(
         <div id="cutoff_paragraph">
-            <p className={id.toString()}>
-                {children}
+            <p id={id}>
+                {cutText}
             </p>
         </div>
     )

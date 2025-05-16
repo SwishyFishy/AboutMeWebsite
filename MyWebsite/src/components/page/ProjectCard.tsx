@@ -17,7 +17,7 @@ function ProjectCard({title, icon, repo, children}: PropsWithChildren<props_Proj
             <div>
                 {children}
             </div>
-            <a rel="external" target="__blank" href={repo}>Repository</a>
+            <a rel="external" target="__blank" href={repo}>&gt;Repository&lt;</a>
         </div>
     );
 }
