@@ -12,8 +12,7 @@ function MyCv()
                     <li><span>Planning and Organization</span></li>
                     <li><span>Adaptable</span></li>
                     <li><span>Reliable</span></li>
-                    <li><span>Collaboration and Teamwork</span></li>
-                    <li><span>Independent Work</span></li>
+                    <li><span>Collaborator or Independent Worker</span></li>
                 </ul>
             </section>
             <section id="skills">
@@ -43,7 +42,7 @@ function MyCv()
                     </li>
                     <li>
                         <span>Backend Web Dev</span>
-                        <span>Javascript, TypeScript, Express, PHP</span>
+                        <span>Javascript, TypeScript, Node, Express, PHP</span>
                     </li>
                     <li>
                         <span>Data Structures</span>
