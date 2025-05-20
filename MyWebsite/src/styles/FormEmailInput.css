@@ -13,6 +13,13 @@
 
 #form_email_input.emailinput{
     width: 40em;
+
+    /* Adjustment for small screens */
+    @media (max-width: 55em)
+    {
+        flex-direction: column;
+        align-items: left;
+    }
 }
 
 #form_email_input input{
@@ -24,4 +31,13 @@
     border: none;
     border-right: .3em solid transparent;               /* Needed to align left edge with text-areas */
     border-bottom: .3em solid var(--accent-primary);
+
+    /* Adjustment for small screens */
+    @media (max-width: 55em)
+    {
+        max-width: 85vw;
+        
+        margin-top: .4em;
+        margin-bottom: .4em;
+    }
 }
