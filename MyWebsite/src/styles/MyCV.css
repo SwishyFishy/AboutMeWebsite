@@ -1,7 +1,6 @@
 #my_cv{
     display: grid;
     grid-template-columns: 50fr 50fr;
-    grid-template-rows: 33fr 34fr 33fr;
 
     /* Adjustment for small screens */
     @media (max-width: 55em)
@@ -11,8 +10,12 @@
     }
 }
 
-#my_cv section:nth-child(2), #my_cv section:nth-child(3){
+#my_cv section{
     grid-row: span 2;
+}
+
+#my_cv section:first-child, #my_cv section:last-child{
+    grid-row: span 1;
 }
 
 #my_cv section{
@@ -84,4 +87,10 @@
 
 #my_cv section .interval span{
     grid-column-start: 2;
+}
+
+/* Core Attributes */
+#my_cv section#me ul{
+    display: grid;
+    grid-template-columns: 50fr 50fr;
 }
