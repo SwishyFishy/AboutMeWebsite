@@ -44,3 +44,15 @@ input, textarea{
     padding: 0em;
     margin: 0em;
 }
+
+a{
+    font-weight: bold;
+}
+
+a:visited{
+    color: var(--text);
+}
+
+a:hover{
+    font-style: italic;
+}

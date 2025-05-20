@@ -3,6 +3,7 @@ a.nav_button{
     color: var(--text);
 
     font-size: large;
+    font-weight: normal;
     text-decoration: none;
     text-wrap-mode: nowrap;
 
@@ -13,6 +14,8 @@ a.nav_button{
 a.nav_button:hover{
     background-color: var(--accent-secondary);
     color: light-dark(var(--background), var(--text)); /*Always use light text for contrast*/
+
+    font-style: normal;
 }
 
 a.nav_button.active{

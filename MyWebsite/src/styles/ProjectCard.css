@@ -26,15 +26,3 @@
     cursor: pointer;
     font-style: italic;
 }
-
-#project_card a{
-    font-weight: bold;
-}
-
-#project_card a:visited{
-    color: var(--text);
-}
-
-#project_card a:hover{
-    font-style: italic;
-}
