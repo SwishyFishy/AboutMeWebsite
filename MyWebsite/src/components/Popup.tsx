@@ -23,7 +23,7 @@ type props_Popup = {
     setDisplay?: Function
 }
 
-function Popup({type, display, setDisplay = () => {}, children}: PropsWithChildren<props_Popup>)
+function Popup({type, display, setDisplay = undefined, children}: PropsWithChildren<props_Popup>)
 {
     // Track whether popup should be open or closed
     const [open, setOpen] = useState<boolean>(display);
@@ -39,7 +39,7 @@ function Popup({type, display, setDisplay = () => {}, children}: PropsWithChildr
     const handleClose = (e: any) => {
         e.preventDefault();
         setOpen(false);
-        setDisplay(false);
+        if (setDisplay) {setDisplay(false)};
     }
 
     return(
