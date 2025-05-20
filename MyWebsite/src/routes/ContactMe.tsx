@@ -24,6 +24,14 @@ function ContactMe()
                 <FormTextInput label="Message" id="message" placeholder="Your message" isArea={true}/>
                 <FormSubmit value="Send"/>
             </Form>
+            <a href="">
+                <i className="fa-brands fa-github"/>
+                <span>SwishyFishy on GitHub</span>
+            </a>
+            <a href="">
+                <i className="fa-brands fa-discord"/>
+                <span>sw1shyfishy on Discord</span>
+            </a>
         </div>
     );
 }
