@@ -12,6 +12,8 @@ function MyCv()
                     <li><span>Planning and Organization</span></li>
                     <li><span>Adaptable</span></li>
                     <li><span>Reliable</span></li>
+                    <li><span>Collaboration and Teamwork</span></li>
+                    <li><span>Independent Work</span></li>
                 </ul>
             </section>
             <section id="skills">
