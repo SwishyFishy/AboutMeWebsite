@@ -21,6 +21,13 @@
     max-width: 40vw;
 
     padding: 1.5em .5em .5em .5em;
+
+    /* Adjustment for small screens */
+    @media (max-width: 55em)
+    {
+        left: 5vw;
+        max-width: 90vw;
+    }
 }
 
 #popup.visible.alert{
