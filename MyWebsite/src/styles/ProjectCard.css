@@ -18,6 +18,10 @@
     padding: .5rem 0rem;
 }
 
+#project_card h2{
+    text-align: center;
+}
+
 #project_card div{
     overflow-y: hidden;
 }
