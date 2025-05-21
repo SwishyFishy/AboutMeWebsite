@@ -5,6 +5,7 @@
     align-items: center;
 
     background-color: var(--accent-primary);
+    text-align: center;
 
     width: 25em;
     height: 30em;
@@ -17,16 +18,11 @@
 #project_card > *{
     padding: .5rem 0rem;
 }
-
-#project_card h2{
-    text-align: center;
-}
-
 #project_card div{
     overflow-y: hidden;
 }
 
-#project_card div p:hover{
+#project_card span:hover{
     cursor: pointer;
     font-style: italic;
 }
