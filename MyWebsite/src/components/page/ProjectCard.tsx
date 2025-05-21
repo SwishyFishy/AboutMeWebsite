@@ -1,27 +1,42 @@
+import { useState } from "react";
 import { PropsWithChildren } from "react";
 
-import CutoffParagraph from "../CutoffParagraph";
+import Popup from "../Popup";
 
 import "../../styles/ProjectCard.css";
 
-type props_ProjectCard = {
+export type ProjectCardArgs = {
     title: string,
     icon: string,
-    repo: string
+    thumbnail: string,
+    repo?: string,
+    link?: string
 }
 
-function ProjectCard({title, icon, repo, children}: PropsWithChildren<props_ProjectCard>)
+type props_ProjectCard = {
+    args: ProjectCardArgs
+}
+
+function ProjectCard({args, children}: PropsWithChildren<props_ProjectCard>)
 {
+    const [showPopup, setShowPopup] = useState<boolean>(false);
+    
+    // Show the full text
+    const handleShowPopup = (e: any) => {
+        e.preventDefault();
+        setShowPopup(true);
+    }
+
     return(
         <div id="project_card">
-            <h2>{title}</h2>
-            <img src={icon} alt={`Thumbnail image for ${title} repository`} width="230" height="225"/>
-            {
-                (children as string).split('.').length - 1 > 1 ? 
-                <CutoffParagraph>{children}</CutoffParagraph> :
-                <p>{children}</p>
-            }
-            <a rel="external" target="__blank" href={repo}>&gt;Repository&lt;</a>
+            <h2>{args.title}</h2>
+            <img src={args.icon} alt={`Thumbnail image for ${args.title} repository`} width="230" height="225"/>
+
+            <span onClick={handleShowPopup}>{args.thumbnail} <i>(Read More)</i></span>
+            <Popup type="window" display={showPopup} setDisplay={setShowPopup}>{children}</Popup>
+
+            {args.repo ? <a rel="external" target="__blank" href={args.repo}>&gt;Repository&lt;</a> : ""}
+            {args.link ? <a rel="external" target="__blank" href={args.link}>&gt;Live Site&lt;</a> : ""}
         </div>
     );
 }

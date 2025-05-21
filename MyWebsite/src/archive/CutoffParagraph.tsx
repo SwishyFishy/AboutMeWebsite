@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { PropsWithChildren } from "react";
 
-import Popup from "./Popup";
+import Popup from "../components/Popup";
 
 function CutoffParagraph({children}: PropsWithChildren)
 {
