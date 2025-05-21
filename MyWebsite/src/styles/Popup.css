@@ -4,6 +4,7 @@
     right: 0;
 
     background-color: var(--accent-primary);
+    text-align: left;
     font-size: large;
 
     border: .25em solid var(--accent-secondary);
