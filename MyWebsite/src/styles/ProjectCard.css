@@ -22,7 +22,7 @@
     overflow-y: hidden;
 }
 
-#project_card span:hover{
+#project_card span.dohover:hover{
     cursor: pointer;
     font-style: italic;
 }

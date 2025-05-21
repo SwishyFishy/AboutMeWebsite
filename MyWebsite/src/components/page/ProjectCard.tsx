@@ -19,6 +19,7 @@ type props_ProjectCard = {
 
 function ProjectCard({args, children}: PropsWithChildren<props_ProjectCard>)
 {
+    const {title, icon, thumbnail, repo, link} = args;
     const [showPopup, setShowPopup] = useState<boolean>(false);
     
     // Show the full text
@@ -29,14 +30,14 @@ function ProjectCard({args, children}: PropsWithChildren<props_ProjectCard>)
 
     return(
         <div id="project_card">
-            <h2>{args.title}</h2>
-            <img src={args.icon} alt={`Thumbnail image for ${args.title} repository`} width="230" height="225"/>
+            <h2>{title}</h2>
+            <img src={icon} alt={`Thumbnail image for ${title} repository`} width="230" height="225"/>
 
-            <span onClick={handleShowPopup}>{args.thumbnail} <i>(Read More)</i></span>
-            <Popup type="window" display={showPopup} setDisplay={setShowPopup}>{children}</Popup>
+            <span className={children ? "dohover" : ""} onClick={handleShowPopup}>{thumbnail} {children ? <i>(Read More)</i> : ""}</span>
+            { children ? <Popup type="window" display={showPopup} setDisplay={setShowPopup}>{children}</Popup> : ""}
 
-            {args.repo ? <a rel="external" target="__blank" href={args.repo}>&gt;Repository&lt;</a> : ""}
-            {args.link ? <a rel="external" target="__blank" href={args.link}>&gt;Live Site&lt;</a> : ""}
+            {repo ? <a rel="external" target="__blank" href={repo}>&gt;Repository&lt;</a> : ""}
+            {link ? <a rel="external" target="__blank" href={link}>&gt;Live Site&lt;</a> : ""}
         </div>
     );
 }
