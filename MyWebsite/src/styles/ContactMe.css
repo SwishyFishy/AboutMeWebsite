@@ -31,9 +31,11 @@
     padding-bottom: .5em;
 }
 
-#contact_me section a{
+#contact_me section span{
     display: grid;
     grid-template-columns: 15fr 85fr;
+    justify-items: center;
+    align-items: end;
 
     width: 15em;
 

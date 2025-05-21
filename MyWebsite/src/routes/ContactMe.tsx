@@ -26,14 +26,14 @@ function ContactMe()
             </Form>
             <section>
                 <h3>Or contact me via my online presence:</h3>
-                <a href="https://github.com/SwishyFishy" target="__blank">
+                <span>
                     <i className="fa-brands fa-github"/>
-                    <span>SwishyFishy on GitHub</span>
-                </a>
-                <a href="https://discord.com/users/sw1shyfishy" target="__blank">
+                    <a href="https://github.com/SwishyFishy" target="__blank">SwishyFishy on GitHub</a>
+                </span>
+                <span>
                     <i className="fa-brands fa-discord"/>
-                    <span>sw1shyfishy on Discord</span>
-                </a>
+                    <a href="https://discord.com/users/sw1shyfishy" target="__blank">sw1shyfishy on Discord</a>
+                </span>
             </section>
         </div>
     );
