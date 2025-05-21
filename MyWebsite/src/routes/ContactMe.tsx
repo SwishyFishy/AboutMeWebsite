@@ -5,20 +5,20 @@ import FormSubmit from "../components/forms/FormSubmit";
 
 import '../styles/ContactMe.css';
 
-type formValues = {
+type FormValues = {
     name: string,
     email: string,
     message: string
 }
 
-const initialValues: formValues = {name: '', email: '', message: ''};
+const initialValues: FormValues = {name: '', email: '', message: ''};
 
 function ContactMe()
 {
     return(
         <div id="contact_me">
             <h2>Contact Me</h2>
-            <Form<formValues> initialValues={initialValues}>
+            <Form<FormValues> initialValues={initialValues}>
                 <FormTextInput label="Name" id="name" placeholder="Your name" isArea={false}/>
                 <FormEmailInput label="Email" id="email" placeholder="Your email"/>
                 <FormTextInput label="Message" id="message" placeholder="Your message" isArea={true}/>
