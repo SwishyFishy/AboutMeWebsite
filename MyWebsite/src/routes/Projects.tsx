@@ -19,6 +19,13 @@ function Projects()
         repo: "https://github.com/SwishyFishy/SwissTournamentTracker"
     }
 
+    const diceRollerArgs: ProjectCardArgs = {
+        title: "Dungeons and Dragons Dice App",
+        icon: "diceroller.png",
+        thumbnail: "A console application for easily saving and rolling sets of dice for D&D characters.",
+        repo: "https://github.com/SwishyFishy/DiceRoller"
+    }
+
     return(
         <div id="projects">
             <ProjectCard args={githubArgs}></ProjectCard>
@@ -37,6 +44,14 @@ function Projects()
                     <img src="tracker_playerview_round.png"/>
                     <img src="tracker_leaderboard.png"/>
                 </div>
+            </ProjectCard>
+            <ProjectCard args={diceRollerArgs}>
+                <p>
+                    A console application I wrote to easily save and load sets of dice for my D&D character. The user can create custom dice, and custom dice bags, and can roll those dice and/or dice bags with the 'roll' command. The dice can also be saved to and loaded from a JSON file for repeat use. The repo has an exe with an installation guide. Give it a try! There are only a few minor bugs left over, mostly to do with insufficient input sanitization.
+                </p>
+                <p>
+                    Doing this project got me learning about the C# JSON Serializer functions and thinking about ways to simplify the representation of complex or self-referential objects for storage as JSON text.
+                </p>
             </ProjectCard>
         </div>
     );
