@@ -32,6 +32,11 @@ function Projects()
                 <p>
                     The frontend supports both the players and the administrator of the event. The players are presented with their match information and are able to input the result. The administrator sees live-updated match scores and can remove players from the event if necessary.
                 </p>
+                <div className="gallery">
+                    <img src="tracker_hostview.png"/>
+                    <img src="tracker_playerview_round.png"/>
+                    <img src="tracker_leaderboard.png"/>
+                </div>
             </ProjectCard>
         </div>
     );
