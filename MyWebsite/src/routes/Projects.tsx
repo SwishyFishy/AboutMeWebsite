@@ -26,6 +26,13 @@ function Projects()
         repo: "https://github.com/SwishyFishy/DiceRoller"
     }
 
+    const mapCreatorArgs: ProjectCardArgs = {
+        title: "Continental Map Generator",
+        icon: "mapper.png",
+        thumbnail: "A generator for simplistic (yet diverse) continental maps for worldbuilding, D&D, and so on.",
+        repo: "https://github.com/SwishyFishy/ContinentMapCreator"
+    }
+
     return(
         <div id="projects">
             <ProjectCard args={githubArgs}></ProjectCard>
@@ -51,6 +58,14 @@ function Projects()
                 </p>
                 <p>
                     Doing this project got me learning about the C# JSON Serializer functions and thinking about ways to simplify the representation of complex or self-referential objects for storage as JSON text.
+                </p>
+            </ProjectCard>
+            <ProjectCard args={mapCreatorArgs}>
+                <p>
+                    A C# Winforms project for generating maps for worldbuilding projects, D&D or other TTRPGs, etc. The app has adjustable sliders for the number and size of provinces and bodies of water, and enough diversity of output to work for continental, provincial, or island/archipelago style maps. The graphics are simple, and there's no 'loading' indicator, but I'm quite proud of the outputs it produces.
+                </p>
+                <p>
+                    There's also code for generating rivers, but I've never been happy with how they look. For now they're hardcoded to be disabled by overriding the MAX and MIN values for NUM_RIVERS in the UpdateGenerationSettings function in Generation.cs.
                 </p>
             </ProjectCard>
         </div>
