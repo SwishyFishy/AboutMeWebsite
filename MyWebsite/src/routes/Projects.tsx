@@ -1,5 +1,6 @@
 import ProjectCard from "../components/page/ProjectCard";
 import { ProjectCardArgs } from "../components/page/ProjectCard";
+import ImageGallery from "../components/ImageGallery";
 
 import "../styles/Projects.css";
 
@@ -46,11 +47,11 @@ function Projects()
                 <p>
                     The frontend supports both the players and the administrator of the event. The players are presented with their match information and are able to input the result. The administrator sees live-updated match scores and can remove players from the event if necessary.
                 </p>
-                <div className="gallery">
-                    <img src="tracker_hostview.png"/>
-                    <img src="tracker_playerview_round.png"/>
-                    <img src="tracker_leaderboard.png"/>
-                </div>
+                <ImageGallery images={[
+                    "tracker_hostview.png",
+                    "tracker_playerview_round.png",
+                    "tracker_leaderboard.png"
+                ]} time={3000}/>                
             </ProjectCard>
             <ProjectCard args={diceRollerArgs}>
                 <p>
@@ -67,6 +68,7 @@ function Projects()
                 <p>
                     There's also code for generating rivers, but I've never been happy with how they look. For now they're hardcoded to be disabled by overriding the MAX and MIN values for NUM_RIVERS in the UpdateGenerationSettings function in Generation.cs.
                 </p>
+                <img src="mapper_map.png" width="750"/>
             </ProjectCard>
         </div>
     );

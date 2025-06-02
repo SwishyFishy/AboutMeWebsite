@@ -12,6 +12,6 @@
     align-items: center;
 }
 
-#projects .gallery img{
+#projects #image_gallery img{
     width: 30%;
 }
