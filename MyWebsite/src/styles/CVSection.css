@@ -1,0 +1,53 @@
+#cv_section{
+    background-color: var(--accent-primary);
+
+    padding: .5em;
+    border: .5em solid var(--accent-secondary);
+    margin: 1em;
+}
+
+#cv_section dl{
+    display: grid;
+    grid-template-columns: 25fr 75fr;
+    row-gap: .15em;
+}
+
+#cv_section dl dt{
+    display: list-item;
+    margin-left: 1em;
+}
+
+#cv_section .interval{
+    display: grid;
+    grid-template-columns: 25fr 75fr;
+    gap: .2em;
+
+    margin-top: 1em;
+
+    /* Adjustment for small screens */
+    @media (max-width: 55em)
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#cv_section .interval h3{
+    grid-row: span 3;
+
+    min-width: 10rem;
+    
+    margin: 0em;
+}
+
+#cv_section .interval p{
+    grid-column: span 2;
+}
+
+#cv_section .interval ul{
+    margin: 0em;
+}
+
+#cv_section .interval span{
+    grid-column-start: 2;
+}

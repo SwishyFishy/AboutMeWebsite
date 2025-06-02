@@ -10,87 +10,17 @@
     }
 }
 
-#my_cv section{
+#my_cv #cv_section{
     grid-row: span 2;
 }
 
-#my_cv section:first-child, #my_cv section:last-child{
+#my_cv #cv_section:first-child, #my_cv #cv_section:last-child{
     grid-row: span 1;
 }
 
-#my_cv section{
-    background-color: var(--accent-primary);
-
-    padding: .5em;
-    border: .5em solid var(--accent-secondary);
-    margin: 1em;
-}
-
-#my_cv section ul{
-    list-style-type: none;
-
-    padding: 0em;
-}
-
-#my_cv section ul li{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    padding-bottom: .2em;
-}
-
-#my_cv section ul li span:first-child{
-    min-width: 10em;
-}
-
-#my_cv section ul li span:last-child{
-    width: 80%;
-
-    /* Adjustment for small screens */
-    @media (max-width: 55em)
-    {
-        width: 50%;
-    }
-}
-
-#my_cv section .interval{
-    display: grid;
-    grid-template-columns: 25fr 75fr;
-    gap: .2em;
-
-    margin-top: 1em;
-
-    /* Adjustment for small screens */
-    @media (max-width: 55em)
-    {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-#my_cv section .interval h3{
-    grid-row: span 3;
-
-    min-width: 10rem;
-    
-    margin: 0em;
-}
-
-#my_cv section .interval p{
-    grid-column: span 2;
-}
-
-#my_cv section .interval ul{
-    margin: 0em;
-}
-
-#my_cv section .interval span{
-    grid-column-start: 2;
-}
-
-/* Core Attributes */
-#my_cv section#me ul{
+#my_cv #cv_section:first-child ul{
     display: grid;
     grid-template-columns: 50fr 50fr;
+    list-style-type: none;
+    padding: 0em;
 }
