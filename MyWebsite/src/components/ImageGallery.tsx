@@ -20,7 +20,7 @@ function ImageGallery({images, time, startIndex = Math.floor(Math.random() * ima
     // Cycle through images
     setInterval(() => {
         setIndex(index + 1 == images.length ? 0 : index + 1);
-    }, time)
+    }, time);
 
     return(
         <div id="image_gallery">

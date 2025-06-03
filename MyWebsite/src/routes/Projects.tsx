@@ -68,7 +68,11 @@ function Projects()
                 <p>
                     There's also code for generating rivers, but I've never been happy with how they look. For now they're hardcoded to be disabled by overriding the MAX and MIN values for NUM_RIVERS in the UpdateGenerationSettings function in Generation.cs.
                 </p>
-                <img src="mapper_map.png" width="750"/>
+                <ImageGallery images={[
+                    "mapper_map.png",
+                    "mapper_map2.png",
+                    "mapper_map3.png"
+                ]} time={3000}/>
             </ProjectCard>
         </div>
     );

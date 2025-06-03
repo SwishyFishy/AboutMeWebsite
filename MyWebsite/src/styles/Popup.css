@@ -22,6 +22,8 @@
 
     padding: 1.5em .5em .5em .5em;
 
+    overflow-y: scroll;
+
     /* Adjustment for small screens */
     @media (max-width: 55em)
     {
