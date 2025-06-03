@@ -5,11 +5,8 @@
     justify-content: space-around;
 }
 
-#projects .gallery{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+#projects #image_gallery{
+    text-align: center;
 }
 
 #projects #image_gallery img{
