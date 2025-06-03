@@ -1,8 +1,14 @@
 #projects{
+    margin: 1em;
+}
+
+#projects > div{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+
+    margin-left: -1em;
 }
 
 #projects #image_gallery{
