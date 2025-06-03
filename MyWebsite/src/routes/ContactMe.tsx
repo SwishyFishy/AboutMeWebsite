@@ -18,7 +18,7 @@ function ContactMe()
     return(
         <div id="contact_me">
             <h2>Contact Me</h2>
-            <Form<FormValues> initialValues={initialValues}>
+            <Form<FormValues> initialValues={initialValues} formspree="xgvkrygb">
                 <FormTextInput label="Name" id="name" placeholder="Your name" isArea={false}/>
                 <FormEmailInput label="Email" id="email" placeholder="Your email"/>
                 <FormTextInput label="Message" id="message" placeholder="Your message" isArea={true}/>

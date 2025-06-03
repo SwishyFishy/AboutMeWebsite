@@ -6,7 +6,7 @@ import { useForm } from "@formspree/react";
 export const CONTEXT_FormData: React.Context<object> = createContext({});
 export const CONTEXT_SetFormData: React.Context<Function> = createContext(new Function);
 
-function Form<T extends object>({initialValues, children}: PropsWithChildren<{initialValues: T}>)
+function Form<T extends object>({initialValues, formspree, children}: PropsWithChildren<{initialValues: T, formspree: string}>)
 {
     // State to manage form elements
     const [values, setValues] = useState<T>(initialValues);
@@ -16,7 +16,7 @@ function Form<T extends object>({initialValues, children}: PropsWithChildren<{in
     const [error, setError] = useState<string>("");
 
     // Manage form submission
-    const [state, submitForm] = useForm(import.meta.env.VITE_CONTACT_FORM_CODE);
+    const [state, submitForm] = useForm(formspree);
     const handleSubmit = (e: any) => {
         let isValid: boolean = true;
 
