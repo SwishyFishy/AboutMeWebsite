@@ -8,7 +8,7 @@ export function CV_Skills()
                 <dd>Emergency Care + CPR</dd>
             <dt>Management</dt>
                 <dd></dd>
-            <dt>MS Office</dt>
+            <dt>MS Office Suite</dt>
                 <dd>Powerpoint, Word, Excel</dd>
             <dt>Training and Coaching</dt>
                 <dd></dd>
