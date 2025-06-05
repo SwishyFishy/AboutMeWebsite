@@ -13,9 +13,9 @@ export function CV_Skills()
             <dt>Training and Coaching</dt>
                 <dd></dd>
             <dt>Frontend Web Dev</dt>
-                <dd>HTML, CSS, JavaScript, TypeScript, React, PHP</dd>
+                <dd>HTML, CSS, JavaScript, TypeScript, Node.js, React, PHP</dd>
             <dt>Backend Web Dev</dt>
-                <dd>Javascript, TypeScript, Node, Express, PHP</dd>
+                <dd>Javascript, TypeScript, Node.js, Express.js, PHP</dd>
             <dt>Data Structures</dt>
                 <dd>Python, Java, C++, C#</dd>
             <dt>Machine Learning</dt>

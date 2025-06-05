@@ -3,7 +3,7 @@ export function CV_Extracurricular()
     return(
         <div className="interval">
             <h3>Trent Magic the Gathering Community</h3>
-            <span>3 years</span>
+            <span>President - 3 years</span>
             <p>
                 The Trent Magic the Gathering Community, or TMTGC, is Trent University's Magic: the Gathering club. When I joined in my first year it was nearly dead - its founding members had all left the year prior, leaving a single 4th year student in charge, who had no interest in advertising or rebuilding a playerbase. I took sole control when he graduated that year, and I'm very proud to say that the club completely recovered.
             </p>
