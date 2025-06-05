@@ -11,21 +11,27 @@ function MyCv()
 {
     return(
         <div id="my_cv">
-            <CVSection title="Core Skills and Attributes">
-                <CV_Me/>
-            </CVSection>
-            <CVSection title="Proficiencies">
-                <CV_Skills/>
-            </CVSection>
-            <CVSection title="Work Experience">
-                <CV_Work/>
-            </CVSection>
-            <CVSection title="Extracurricular Experience">
-                <CV_Extracurricular/>
-            </CVSection>
-            <CVSection title="Education">
-                <CV_School/>
-            </CVSection>
+            <div>
+                <h2>My Resume</h2>
+                <a href="CV.pdf" download="jonahgallowayfenwick_cv">Download the PDF</a>
+            </div>
+            <div>
+                <CVSection title="Core Skills and Attributes">
+                    <CV_Me/>
+                </CVSection>
+                <CVSection title="Proficiencies">
+                    <CV_Skills/>
+                </CVSection>
+                <CVSection title="Work Experience">
+                    <CV_Work/>
+                </CVSection>
+                <CVSection title="Extracurricular Experience">
+                    <CV_Extracurricular/>
+                </CVSection>
+                <CVSection title="Education">
+                    <CV_School/>
+                </CVSection>
+            </div>
         </div>
     );
 }
