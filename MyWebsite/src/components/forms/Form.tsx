@@ -2,6 +2,8 @@ import { useState, createContext } from "react";
 import { PropsWithChildren } from "react";
 import { useForm } from "@formspree/react";
 
+import FormMessage from "./FormMessage";
+
 // Create the context that form elements reference to get/set for element values
 export const CONTEXT_FormData: React.Context<object> = createContext({});
 export const CONTEXT_SetFormData: React.Context<Function> = createContext(new Function);
@@ -14,6 +16,8 @@ function Form<T extends object>({initialValues, formspree, children}: PropsWithC
         setValues({...values, [e.target.id]: e.target.value});
     }
     const [error, setError] = useState<string>("");
+    const [sent, setSent] = useState<boolean>(false);
+    const [trySend, setTrySend] = useState<boolean>(false);
 
     // Manage form submission
     const [state, submitForm] = useForm(formspree);
@@ -38,10 +42,14 @@ function Form<T extends object>({initialValues, formspree, children}: PropsWithC
             // Reset the form elements
             setValues(initialValues);
             setError("");
+
+            // Show the sent message
+            setSent(true);
         }
         else
         {
             e.preventDefault();
+            setTrySend(true);
         }
     }
 
@@ -52,7 +60,9 @@ function Form<T extends object>({initialValues, formspree, children}: PropsWithC
                     <form onSubmit={handleSubmit}>
                         {children}
                     </form>
-                    <span id="error" className={error == "" ? "hidden" : "italics"}>Please fill out {error} field.</span>
+                    <FormMessage display={error != ""}>Please fill out {error} field.</FormMessage>
+                    <FormMessage display={sent}>Message sent!</FormMessage>
+                    <FormMessage display={!sent} active={trySend}>Message failed to send.</FormMessage>
                 </div>
             </CONTEXT_SetFormData>
         </CONTEXT_FormData>
