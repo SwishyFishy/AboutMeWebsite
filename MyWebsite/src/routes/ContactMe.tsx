@@ -4,6 +4,7 @@ import FormEmailInput from "../components/forms/FormEmailInput";
 import FormSubmit from "../components/forms/FormSubmit";
 
 import '../styles/ContactMe.css';
+import ExternalLink from "../components/ExternalLink";
 
 type FormValues = {
     name: string,
@@ -26,14 +27,18 @@ function ContactMe()
             </Form>
             <section>
                 <h3>Or contact me via my online presence:</h3>
-                <span>
-                    <i className="fa-brands fa-github"/>
-                    <a href="https://github.com/SwishyFishy" target="__blank">SwishyFishy on GitHub</a>
-                </span>
-                <span>
-                    <i className="fa-brands fa-discord"/>
-                    <a href="https://discord.com/users/sw1shyfishy" target="__blank">sw1shyfishy on Discord</a>
-                </span>
+                <ExternalLink href="https://github.com/SwishyFishy">
+                    <span>
+                        <i className="fa-brands fa-github"/>
+                        SwishyFishy on GitHub
+                    </span>
+                </ExternalLink>
+                <ExternalLink href="https://discord.com/users/sw1shyfishy">   
+                    <span>
+                        <i className="fa-brands fa-discord"/>
+                        sw1shyfishy on Discord
+                    </span>
+                </ExternalLink>
             </section>
         </div>
     );
