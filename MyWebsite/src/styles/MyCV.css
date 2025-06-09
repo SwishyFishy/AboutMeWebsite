@@ -42,14 +42,3 @@
     list-style-type: none;
     padding: 0em;
 }
-
-#my_cv a{
-    background-color: var(--accent-primary);
-    
-    padding: .5em;
-    border: .5em solid var(--accent-secondary);
-}
-
-#my_cv a:hover{
-    font-style: normal;
-}

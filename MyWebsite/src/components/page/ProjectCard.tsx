@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { PropsWithChildren } from "react";
 
+import ExternalLink from "../ExternalLink";
 import Popup from "../Popup";
 
 import "../../styles/ProjectCard.css";
@@ -9,7 +10,6 @@ export type ProjectCardArgs = {
     title: string,
     icon: string,
     thumbnail: string,
-    repo?: string,
     link?: string
 }
 
@@ -19,7 +19,7 @@ type props_ProjectCard = {
 
 function ProjectCard({args, children}: PropsWithChildren<props_ProjectCard>)
 {
-    const {title, icon, thumbnail, repo, link} = args;
+    const {title, icon, thumbnail, link} = args;
     const [showPopup, setShowPopup] = useState<boolean>(false);
     
     // Show the full text
@@ -31,13 +31,14 @@ function ProjectCard({args, children}: PropsWithChildren<props_ProjectCard>)
     return(
         <div id="project_card">
             <h2>{title}</h2>
-            <img src={icon} alt={`Thumbnail image for ${title} repository`} width="230" height="225"/>
 
-            <span className={children ? "dohover" : ""} onClick={handleShowPopup}>{thumbnail} {children ? <i>(Read More)</i> : ""}</span>
+            <div className={children ? "dohover thumbnail" : "thumbnail"} onClick={handleShowPopup}>
+                <img src={icon} alt={`Thumbnail image for ${title} repository`} width="230" height="225"/>
+                <span>{thumbnail} {children ? <i>(Read More)</i> : ""}</span>
+            </div>
             { children ? <Popup type="window" display={showPopup} setDisplay={setShowPopup}>{children}</Popup> : ""}
 
-            {repo ? <a rel="external" target="__blank" href={repo}>&gt;Repository&lt;</a> : ""}
-            {link ? <a rel="external" target="__blank" href={link}>&gt;Live Site&lt;</a> : ""}
+            {link ? <ExternalLink href={link}>See More</ExternalLink> : ""}
         </div>
     );
 }

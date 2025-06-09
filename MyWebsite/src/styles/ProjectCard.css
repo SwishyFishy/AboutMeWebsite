@@ -10,19 +10,21 @@
     width: 20em;
     height: 30em;
 
-    padding: 0em .5em;
+    padding: .75em;
     border: .5em solid var(--accent-secondary);
     margin: 1em;
 }
 
-#project_card > *{
-    padding: .5rem 0rem;
-}
-#project_card div{
-    overflow-y: hidden;
+#project_card .thumbnail{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 20em;
 }
 
-#project_card span.dohover:hover{
-    cursor: pointer;
+#project_card .dohover:hover{
     font-style: italic;
+    cursor: pointer;
 }

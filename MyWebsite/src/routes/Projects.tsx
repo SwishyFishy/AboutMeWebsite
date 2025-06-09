@@ -10,28 +10,28 @@ function Projects()
         title: "My GitHub",
         icon: "github.png",
         thumbnail: "My GitHub homepage.",
-        repo: "https://github.com/SwishyFishy"
+        link: "https://github.com/SwishyFishy"
     }
 
     const trackerArgs: ProjectCardArgs = {
         title: "MtG Swiss Tournament Tracker", 
         icon: "tracker.png",
         thumbnail: "Tournament software for Magic: the Gathering drafts.",
-        repo: "https://github.com/SwishyFishy/SwissTournamentTracker"
+        link: "https://github.com/SwishyFishy/SwissTournamentTracker"
     }
 
     const diceRollerArgs: ProjectCardArgs = {
         title: "Dungeons and Dragons Dice App",
         icon: "diceroller.png",
         thumbnail: "A console application for easily saving and rolling sets of dice for D&D characters.",
-        repo: "https://github.com/SwishyFishy/DiceRoller"
+        link: "https://github.com/SwishyFishy/DiceRoller"
     }
 
     const mapCreatorArgs: ProjectCardArgs = {
         title: "Continental Map Generator",
         icon: "mapper.png",
         thumbnail: "A generator for simplistic (yet diverse) continental maps for worldbuilding, D&D, and so on.",
-        repo: "https://github.com/SwishyFishy/ContinentMapCreator"
+        link: "https://github.com/SwishyFishy/ContinentMapCreator"
     }
 
     return(

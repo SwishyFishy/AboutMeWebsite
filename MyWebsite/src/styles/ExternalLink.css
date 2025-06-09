@@ -1,0 +1,10 @@
+#external_link{
+    background-color: var(--accent-primary);
+    
+    padding: .5em;
+    border: .5em solid var(--accent-secondary);
+}
+
+#external_link:hover{
+    font-style: normal;
+}

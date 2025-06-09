@@ -1,4 +1,5 @@
 import CVSection from '../components/page/CVSection';
+import DownloadLink from '../components/DownloadLink';
 import { CV_Me } from '../static_content/CV_Me';
 import { CV_Skills } from '../static_content/CV_Skills';
 import { CV_Work } from '../static_content/CV_Work';
@@ -13,7 +14,7 @@ function MyCv()
         <div id="my_cv">
             <div>
                 <h2>My Resume</h2>
-                <a href="CV.pdf" download="jonahgallowayfenwick_cv">Download the PDF</a>
+                <DownloadLink href="CV.pdf" download="jonahgallowayfenwick_cv">Download the PDF</DownloadLink>
             </div>
             <div>
                 <CVSection title="Core Skills and Attributes">
