@@ -15,7 +15,7 @@
     width: 40em;
 
     /* Adjustment for small screens */
-    @media (max-width: 55em)
+    @media (max-width: 45em)
     {
         flex-direction: column;
         align-items: left;
@@ -33,7 +33,7 @@
     border-bottom: .3em solid var(--accent-primary);
 
     /* Adjustment for small screens */
-    @media (max-width: 55em)
+    @media (max-width: 45em)
     {
         max-width: 85vw;
         

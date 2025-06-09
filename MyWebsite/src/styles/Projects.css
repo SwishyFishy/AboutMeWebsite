@@ -1,5 +1,13 @@
 #projects{
     margin: 1em;
+
+    /*Adjustment for small screens*/
+    @media (max-width: 55em)
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 #projects > div{
@@ -8,7 +16,12 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-    margin-left: -1em;
+    /*Adjustment for small screens*/
+    @media (max-width: 55em)
+    {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 #projects #image_gallery{
