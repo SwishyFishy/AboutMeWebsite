@@ -22,8 +22,6 @@ export function CV_Skills()
                 <dd>C++</dd>
             <dt>Scripting</dt>
                 <dd>Bash, Python, C, C++</dd>
-            <dt>Game Dev</dt>
-                <dd>JavaScript, TypeScript, Python, Java, C#</dd>
             <dt>Git</dt>
                 <dd></dd>
             <dt>SQL</dt>
