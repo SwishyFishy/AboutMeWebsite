@@ -34,6 +34,13 @@ function Projects()
         link: "https://github.com/SwishyFishy/ContinentMapCreator"
     }
 
+    const playingCardArgs: ProjectCardArgs = {
+        title: "Playing Card Component",
+        icon: "card.png",
+        thumbnail: "A React component to emulate a playing card.",
+        link: "https://github.com/SwishyFishy/PlayingCard"
+    }
+
     return(
         <div id="projects">
             <h2>My Projects</h2>
@@ -75,6 +82,9 @@ function Projects()
                         "mapper_map2.png",
                         "mapper_map3.png"
                     ]} time={3000}/>
+                </ProjectCard>
+                <ProjectCard args={playingCardArgs}>
+                    <p>A React component which emulates a playing card. It's draggable by the user, with dynamic rotation and shadow according to the movement.</p>
                 </ProjectCard>
             </div>
         </div>
