@@ -1,8 +1,11 @@
+import { Card } from "animated-playing-card";
+
 import ProjectCard from "../components/page/ProjectCard";
 import { ProjectCardArgs } from "../components/page/ProjectCard";
 import ImageGallery from "../components/ImageGallery";
 
 import "../styles/Projects.css";
+import ExternalLink from "../components/ExternalLink";
 
 function Projects()
 {
@@ -85,6 +88,12 @@ function Projects()
                 </ProjectCard>
                 <ProjectCard args={playingCardArgs}>
                     <p>A React component which emulates a playing card. It's draggable by the user, with dynamic rotation and shadow according to the movement.</p>
+                    <Card>
+                        <div className="card_content">
+                            <span>Drag me!</span>
+                            <ExternalLink href="https://www.npmjs.com/package/animated-playing-card?activeTab=readme">Live on NPM</ExternalLink>
+                        </div>
+                    </Card>
                 </ProjectCard>
             </div>
         </div>
