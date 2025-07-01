@@ -41,7 +41,7 @@ function Projects()
         title: "Playing Card Component",
         icon: "card.png",
         thumbnail: "A React component to emulate a playing card.",
-        link: "https://github.com/SwishyFishy/PlayingCard"
+        link: "https://github.com/SwishyFishy/PlayingCardComponent"
     }
 
     return(
