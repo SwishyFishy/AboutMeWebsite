@@ -8,7 +8,7 @@ import "../../styles/ProjectCard.css";
 
 export type ProjectCardArgs = {
     title: string,
-    icon: string,
+    icon?: string,
     thumbnail: string,
     link?: string
 }
@@ -33,7 +33,7 @@ function ProjectCard({args, children}: PropsWithChildren<props_ProjectCard>)
             <h2>{title}</h2>
 
             <div className={children ? "dohover thumbnail" : "thumbnail"} onClick={handleShowPopup}>
-                <img src={icon} alt={`Thumbnail image for ${title} repository`} width="230" height="225"/>
+                {icon ? <img src={icon} alt={`Thumbnail image for ${title} repository`} width="230" height="225"/> : ""}
                 <span>{thumbnail} {children ? <i>(Read More)</i> : ""}</span>
             </div>
             { children ? <Popup type="window" display={showPopup} setDisplay={setShowPopup}>{children}</Popup> : ""}

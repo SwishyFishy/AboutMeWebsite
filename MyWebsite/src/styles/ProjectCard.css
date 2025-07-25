@@ -28,3 +28,9 @@
     font-style: italic;
     cursor: pointer;
 }
+
+#project_card code{
+    word-wrap: normal;
+    overflow-wrap: normal;
+    overflow-y: scroll;
+}

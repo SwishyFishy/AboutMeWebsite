@@ -44,6 +44,13 @@ function Projects()
         link: "https://github.com/SwishyFishy/PlayingCardComponent"
     }
 
+    const importReactArgs: ProjectCardArgs = {
+        title: "Import React Component",
+        icon: "",
+        thumbnail: "A typescript module which handles importing React components into non-React projects.",
+        link: "https://github.com/SwishyFishy/ImportReactInJS"
+    }
+
     return(
         <div id="projects">
             <h2>My Projects</h2>
@@ -94,6 +101,11 @@ function Projects()
                             <ExternalLink href="https://www.npmjs.com/package/animated-playing-card?activeTab=readme">Live on NPM</ExternalLink>
                         </div>
                     </Card>
+                </ProjectCard>
+                <ProjectCard args={importReactArgs}>
+                    <p>
+                        A Typescript module which handles importing React components into non-React projects. The package makes using React components in projects which are built on vanilla HTML and javascript as simple as including a custom component and a pair of function calls.
+                    </p>
                 </ProjectCard>
             </div>
         </div>
